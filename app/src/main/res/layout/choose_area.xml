@@ -8,13 +8,16 @@
     android:background="#fff">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
-    <TextView
-        android:id="@+id/title_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#fff"
-        android:textSize="20sp"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4DD0E1">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/back_button"
