@@ -49,7 +49,7 @@ public class AutoUpdateService extends Service {
     }
 
     /**
-     * 更新必应每日一图
+     * 更新必应每日一图，将数据存到SharedPreferences中
      */
     private void updateBingPic() {
         String requestBingPic = "http://guolin.tech/api/bing_pic";
@@ -71,7 +71,8 @@ public class AutoUpdateService extends Service {
     }
 
     /**
-     * 更新天气信息
+     * 更新天气信息，将数据存到SharedPreferences中
+     * 之后可以在主程序WeatherActivity中获取。
      */
     private void updateWeather() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
